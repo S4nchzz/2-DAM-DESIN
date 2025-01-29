@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/Payment.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <title>Payment Page</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <img class="logoPicture" src="./src/img/logo.png" width="100px" class="logo">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="sidebarMenu">
+                <ul class="navbar-nav me-4">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-link whiteText" role="button" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle whiteText" role="button" href="#" data-bs-toggle="dropdown">Servicios</a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="cursos.js" role="button">Cursos</a></li>
+                            <li><a class="dropdown-item" href="maquinas.js" role="button">Maquinas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-link whiteText" role="button" href="cuotas.js">Cuotas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-link whiteText" role="button" href="reservas.js">Reservas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-link whiteText" role="button" href="contacto.js">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#"><span class="material-icons" style="color:white; font-size: 200%;" data-bs-toggle="modal" data-bs-target="#loginPopup">person</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="loginPopup" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body bg-dark">
+                    <div class="loginDiv">
+                        <div class="loginOrOtherText"></div>
+                        <h1 class="text-white" style="font-size: 350%;">Log in</h1>
+                        <h5 style="color: #8A8888; font-size: 0.80rem;">or sing up with</h5>
+                        
+                        <div class="loginSocialNetworkPictures">
+                            <a href="#"><img src="./src/img/socialNetworks/facebook.png" alt="facebook"></a>
+                            <a href="#"><img src="./src/img/socialNetworks/google.png" alt="google"></a>
+                            <a href="#"><img src="./src/img/socialNetworks/twitter.png" alt="twitter"></a>
+                        </div>
+
+                        <div class="inputFields mt-3">
+                            <input type="text" id="username" class="loginTextFields" placeholder="Username"/>
+                            <label for="username">Username</label>
+                            <input type="password" id="password" class="loginTextFields" placeholder="Password"/>
+                            <label for="password">Password</label>
+                        </div>
+
+                        <div class="buttonsPopup">
+                            <button type="button" class="btn btn-secondary"style="background-color: transparent;">Sing up</button>
+                            <button type="button" class="btn btn-primary">Log in</button>
+                        </div>
+                    </div>
+
+                    <div class="manBackground col-0">
+                        <img class="manPosingPicture" src="./src/img/man.png" alt="Man Possing" width="90%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-container">
+        <img src="./src/img/background.png" width="100%">
+        <h1 class="text-overlay">CUOTAS</h1>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card box">
+                    <img class="packPicture" src="src/img/packGeneralImage.png" alt="Pack basico" width="100%">
+
+                    <div class="content">
+                        <h5>Pack basico</h5>
+                        <p>Incluye</p>
+
+                        <div>
+                            <ul>
+                                <li>Pulsera de entrada</li>
+                                <li>Acceso unicamente a sala fit</li>
+                                <li>Vestuario (sin taquilla reservada)</li>
+                                <li>1 Curso gratuito</li>
+                            </ul>
+                        </div>
+                        
+                        <h5 class="price">7,99 € / mes</h5>
+                        <a href="#" class="btn btn-dark">UNIRSE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card box">
+                    <img class="packPicture" src="src/img/packGeneralImage.png" alt="Pack medio" width="100%">
+
+                    <div class="content">
+                        <h5>Pack basico</h5>
+                        <p>Incluye</p>
+
+                        <ul>
+                            <li>Pulsera de entrada</li>
+                            <li>Acceso a la sala fit y padel</li>
+                            <li>Vestuario (con taquilla reservada)</li>
+                            <li>2 cursos gratuitos</li>
+                            <li>2h de aparcamiento (sin parcela)</li>
+                        </ul>
+                        
+                        <h5 class="price">11,99 € / mes</h5>
+                        <a href="#" class="btn btn-dark">UNIRSE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card box">
+                    <img class="packPicture" src="src/img/packGeneralImage.png" alt="Pack completo" width="100%">
+
+                    <div class="content">
+                        <h5>Pack completo</h5>
+                        <p>Incluye</p>
+
+                        <ul>
+                            <li>Pulsera de entrada</li>
+                            <li>Acceso a todas las salas deportivas</li>
+                            <li>Vestuario (con taquilla reservada)</li>
+                            <li>4 Cursos gratuitos</li>
+                            <li>4h de aparcamiento (con parcela)</li>
+                            <li>Sauna accesbile con pulsera</li>
+                            <li>Acceso a piscina gratuito</li>
+                            <li>Accesorios gratuitos con el pack</li>
+                        </ul>
+                        
+                        <h5 class="price">37,99 € / mes</h5>
+                        <a href="#" class="btn btn-dark">UNIRSE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-3">
+                <div class="card box">
+                    <img class="packPicture" src="src/img/packGeneralImage.png" alt="Pack premium" width="100%">
+
+                    <div class="content">
+                        <h5>Pack Premium</h5>
+                        <p>Incluye</p>
+
+                        <ul>
+                            <li>Pulsera de entrada</li>
+                            <li>Acceso a todas las salas deportivas</li>
+                            <li>Vestuario (con taquilla reservada)</li>
+                            <li>5 Cursos gratuitos (A eleccion)</li>
+                            <li>6h de aparcamiento (con parcela)</li>
+                            <li>Sauna, piscina y sala de padel</li>
+                            <li>2 Suplementos (A eleccion) / mes</li>
+                            <li>Reserva de maquinas sin limite</li>
+                        </ul>
+                        
+                        <h5 class="price">75,99 € / mes</h5>
+                        <a href="#" class="btn btn-dark">UNIRSE</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <footer>
+        <h6 class="footerTitle">PowerFit</h6>
+        <ul class="horizontalMenuList">
+            <li>Home</li>
+            <li>Cursos</li>
+            <li>Maquinas</li>
+            <li>Cuotas</li>
+            <li>Reservas</li>
+            <li>Contacto</li>
+        </ul>
+        <ul class="socialNetworks">
+            <li><img src="./src/img/socialNetworks/Ptwitter.png" width="80%"></li>
+            <li><img src="./src/img/socialNetworks/Pinstagram.png" width="80%"></li>
+            <li><img src="./src/img/socialNetworks/Pfacebook.png" width="80%"></li>
+            <li><img src="./src/img/socialNetworks/Pyoutube.png" width="80%"></li>
+        </ul>
+    </footer>
+</body>
+</html>

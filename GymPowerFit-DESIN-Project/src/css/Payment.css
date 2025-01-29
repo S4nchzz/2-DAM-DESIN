@@ -1,0 +1,127 @@
+/*Parte superior de la pagina*/
+.paymentTitle {
+    font-size: 400%;
+    color: white;
+    font-weight: bold;
+    
+}
+
+/*Nav*/
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+}
+
+.logoPicture {
+    margin-left: 2%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+/*Packs*/
+.box {
+    border: 3px solid rgb(151, 150, 150);
+    border-radius: 10px;
+}
+
+.content {
+    margin-bottom: 5%;
+    padding: 5%;
+}
+
+.price {
+    display: inline;
+    margin-right: 20%;
+    margin-left: 3%;
+}
+
+.packPicture {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+/*Footer*/
+footer {
+    background-color: #141212;
+    color: white;
+    padding: 1%;
+}
+
+.footerTitle, .horizontalMenuList, .socialNetworks {
+    display: flex;
+    justify-content: center;
+}
+
+.footerTitle {
+    font-size: 200%;
+}
+
+.horizontalMenuList li, .socialNetworks li {
+    list-style-type: none;
+    padding-left: 1%;
+    padding-right: .5%;
+    cursor: pointer;
+}
+
+.horizontalMenuList li:hover {
+    transition: ease-in-out 0.5s;
+    color: rgb(209, 209, 209);
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.text-overlay {
+    position: absolute;
+    color: white;
+    font-size: 400%;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+/*Modal*/
+.modal-body {
+    display: flex;
+    align-items: center;
+}
+
+.loginDiv {
+    text-align: center;
+    margin-left: 10%;
+}
+
+.manBackground {
+    flex: 1;
+    display: flex;
+    justify-content: right;
+}
+
+.loginTextFields {
+    display: block;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: white;
+}
+
+.manPosingPicture {
+    mask-image: linear-gradient(
+        to left,
+        black 10%,
+        transparent
+    );
+
+    opacity: 70%;
+    margin-bottom: -3%;
+    background-size: cover;
+}
+
+.buttonsPopup {
+    display: flex;
+    justify-content: space-between;
+}

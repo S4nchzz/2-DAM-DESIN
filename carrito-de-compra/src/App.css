@@ -1,0 +1,39 @@
+.Container-show {
+  display: flex;
+  padding: 2%;
+  flex-wrap: wrap;
+}
+
+.Container-semihide {
+  background-color: rgb(165, 165, 165);
+  display: flex;
+  padding: 2%;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 calc(20%);
+  margin: 5px;
+  border: 1px solid black;
+  padding: 1%;
+}
+
+.popUp {
+  flex-direction: column;
+  background-color: white;
+  width: 300px;
+  position: absolute;
+  padding-left: 5%;
+  left: 40%;
+  padding-bottom: 4%;
+}
+
+.buttonAddCart {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-self: right;
+  margin-top: 3%;
+  margin-right: 3%;
+}

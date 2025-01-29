@@ -1,0 +1,88 @@
+body {
+  background: #1d1d1d;
+}
+
+/* TABLERO & COMPONENTES DEL MISMO*/
+.tablero {
+  margin-top: 10%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+  flex-direction: row;
+  gap: 1%;
+}
+
+.carta {
+  cursor: pointer;
+  animation: Card-flip s linear;
+}
+
+/* TITULO DE LA VENTANA PRINCIPAL & ELEMENTOS*/
+.title {
+  color: white;
+  text-align: center;
+  margin-top: 4%;
+  font-size: 5em;
+  margin-bottom: -5%;
+}
+
+.counter {
+  color: rgb(148, 148, 148);
+  text-align: center;
+  margin-top: 6%;
+  font-size: 4em;
+  margin-bottom: -8%;
+}
+
+/* Border to ALL images (pokemon card & poker cards)*/
+img {
+  border-radius: 2%;
+  animation: Card-flip 1s;
+}
+
+@keyframes Card-flip {
+  from {
+    transform: rotatey(0deg);
+  }
+  to {
+    transform: rotatey(360deg);
+  }
+}
+
+.hidden {
+  animation: hideCards linear 0.3s;
+  opacity: 0%;
+}
+
+@keyframes hideCards {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 10%;
+  }
+}
+
+.movimientos {
+  color: rgb(148, 148, 148);
+  text-align: center;
+  margin-top: 10%;
+  font-size: 2em;
+  margin-bottom: -8.5%;
+}
+
+/*Restart button*/
+
+.restartDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  margin-bottom: -10%;
+  margin-bottom: -8%;
+  cursor: pointer;
+}
